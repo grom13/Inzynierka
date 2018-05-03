@@ -1,0 +1,11 @@
+F:\Inżynierka_Repozytorium\Inzynierka\ProjektInżynierski\ProjektInżynierski\ProjektInżynierski\bin\Debug\netstandard2.0\ProjektInżynierski.deps.json
+F:\Inżynierka_Repozytorium\Inzynierka\ProjektInżynierski\ProjektInżynierski\ProjektInżynierski\bin\Debug\netstandard2.0\ProjektInżynierski.dll
+F:\Inżynierka_Repozytorium\Inzynierka\ProjektInżynierski\ProjektInżynierski\ProjektInżynierski\bin\Debug\netstandard2.0\ProjektInżynierski.pdb
+F:\Inżynierka_Repozytorium\Inzynierka\ProjektInżynierski\ProjektInżynierski\ProjektInżynierski\obj\Debug\netstandard2.0\ProjektInżynierski.csprojResolveAssemblyReference.cache
+F:\Inżynierka_Repozytorium\Inzynierka\ProjektInżynierski\ProjektInżynierski\ProjektInżynierski\obj\Debug\netstandard2.0\ProjektInżynierski.csproj.CoreCompileInputs.cache
+F:\Inżynierka_Repozytorium\Inzynierka\ProjektInżynierski\ProjektInżynierski\ProjektInżynierski\obj\Debug\netstandard2.0\ProjektInżynierski.App.xaml.g.cs
+F:\Inżynierka_Repozytorium\Inzynierka\ProjektInżynierski\ProjektInżynierski\ProjektInżynierski\obj\Debug\netstandard2.0\ProjektInżynierski.MainPage.xaml.g.cs
+F:\Inżynierka_Repozytorium\Inzynierka\ProjektInżynierski\ProjektInżynierski\ProjektInżynierski\obj\Debug\netstandard2.0\ProjektInżynierski.AssemblyInfoInputs.cache
+F:\Inżynierka_Repozytorium\Inzynierka\ProjektInżynierski\ProjektInżynierski\ProjektInżynierski\obj\Debug\netstandard2.0\ProjektInżynierski.AssemblyInfo.cs
+F:\Inżynierka_Repozytorium\Inzynierka\ProjektInżynierski\ProjektInżynierski\ProjektInżynierski\obj\Debug\netstandard2.0\ProjektInżynierski.dll
+F:\Inżynierka_Repozytorium\Inzynierka\ProjektInżynierski\ProjektInżynierski\ProjektInżynierski\obj\Debug\netstandard2.0\ProjektInżynierski.pdb
