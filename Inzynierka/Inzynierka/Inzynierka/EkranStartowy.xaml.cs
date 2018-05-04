@@ -13,8 +13,38 @@ namespace Inzynierka
 	public partial class EkranStartowy : ContentPage
 	{
 		public EkranStartowy ()
-		{
-			InitializeComponent ();
+        {
+            NavigationPage.SetHasNavigationBar(this, false);
+            InitializeComponent ();
 		}
-	}
+        private void btnWejscie(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Wejscie());
+        }
+
+        protected override void OnSizeAllocated(double width, double height)
+        {
+            base.OnSizeAllocated(width, height);
+
+            if (height > width)
+            {
+                Pionowy.IsVisible = true;
+
+            }
+            else
+            {
+                Pionowy.IsVisible = false;
+            }
+            if (width > height)
+            {
+                Poziomy.IsVisible = true;
+
+            }
+            else
+            {
+                Poziomy.IsVisible = false;
+            }
+
+        }
+    }
 }
