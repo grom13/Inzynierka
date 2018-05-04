@@ -13,8 +13,9 @@ namespace Inzynierka
 		{
 			InitializeComponent();
 
-			MainPage = new Inzynierka.MainPage();
-		}
+            MainPage = new NavigationPage(new EkranStartowy());
+            NavigationPage.SetHasNavigationBar(MainPage, false);
+        }
 
 		protected override void OnStart ()
 		{

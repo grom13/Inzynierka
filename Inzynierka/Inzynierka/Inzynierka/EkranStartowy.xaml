@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Inzynierka.EkranStartowy">
+    <Grid>
+        <Grid x:Name="Poziom" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="84*"/>
+                <RowDefinition Height="4*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" BackgroundColor="Black"/>
+            <Grid Grid.Row="1" BackgroundColor="CadetBlue"/>
+            <Grid Grid.Row="2" BackgroundColor="White"/>
+            <Grid Grid.Row="3" BackgroundColor="DarkGray"/>
+        </Grid>
+        
+        <Grid x:Name="Pionowy">
+            
+        </Grid>
+    </Grid>
+</ContentPage>

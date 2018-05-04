@@ -16,10 +16,12 @@ namespace Inzynierka.Droid
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
-
+            Window.AddFlags(WindowManagerFlags.Fullscreen);
+            Window.RequestFeature(WindowFeatures.NoTitle);
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            global::Xamarin.Forms.Forms.SetTitleBarVisibility(Xamarin.Forms.AndroidTitleBarVisibility.Never);
             LoadApplication(new App());
         }
     }
