@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Inzynierka.EkranStartowy"
-              xmlns:local="clr-namespace:Inzynierka.CustomRenderer; assembly=Inzynierka">
+              xmlns:local="clr-namespace:Inzynierka.CustomRenderer; assembly=Inzynierka"
+             xmlns:control="clr-namespace:Inzynierka.UserControls">
     <Grid>
         <Grid x:Name="Poziomy" RowSpacing="0" BackgroundColor="Aqua">
             <Grid.RowDefinitions>
@@ -16,78 +17,9 @@
                     <ColumnDefinition Width="20*"/>
                     <ColumnDefinition Width="40*"/>
                 </Grid.ColumnDefinitions>
+                <control:PrzyciskWyjscia Grid.Column="0"/>
+                <control:PrzyciskWejscia Grid.Column="2"/>
 
-
-                <Frame Grid.Column="0"
-                               Padding="0"
-                               CornerRadius="15"
-                               WidthRequest="300" 
-                               HeightRequest="300"
-                               HorizontalOptions="End"
-                               VerticalOptions="Center">
-                    <Grid
-                        BackgroundColor="Red" 
-                        HorizontalOptions="Fill" 
-                        VerticalOptions="Fill" >
-                        <!--<local:GradientColorStack StartColor="#ff0000" EndColor="#c61313">-->
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="5*"/>
-                            <RowDefinition Height="50*"/>
-                            <RowDefinition Height="45*"/>
-                        </Grid.RowDefinitions>
-                        <Image Grid.Row="1" 
-                                   Source="Images/exit.png" 
-                                   HorizontalOptions="Center"/>
-                        <Label Grid.Row="2" 
-                                   Text="REJESTRACJA WYJŚĆ" 
-                                   TextColor="White"  
-                                    VerticalTextAlignment="Start"
-                                       HorizontalTextAlignment="Center"
-                                       VerticalOptions="Center"
-                                   HorizontalOptions="Center" 
-                                   FontSize="25"
-                                   FontAttributes="Bold"/>
-                        <!--</local:GradientColorStack>-->
-                    </Grid>
-                </Frame>
-
-                <Frame Grid.Column="2"
-                               Padding="0"
-                               CornerRadius="15"
-                               WidthRequest="300" 
-                               HeightRequest="300"
-                               HorizontalOptions="Start"
-                               VerticalOptions="Center">
-                    <Grid
-                        BackgroundColor="Green" 
-                        HorizontalOptions="Fill" 
-                        VerticalOptions="Fill" >
-                        <Grid.GestureRecognizers>
-                            <TapGestureRecognizer
-                                Tapped="btnWejscie"
-                                NumberOfTapsRequired="1"/>
-                        </Grid.GestureRecognizers>
-                        <!--<local:GradientColorStack StartColor="#ff0000" EndColor="#c61313">-->
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="5*"/>
-                            <RowDefinition Height="50*"/>
-                            <RowDefinition Height="45*"/>
-                        </Grid.RowDefinitions>
-                        <Image Grid.Row="1" 
-                                   Source="Images/enter.png" 
-                                   HorizontalOptions="Center"/>
-                        <Label Grid.Row="2" 
-                                   Text="REJESTRACJA WEJŚĆ" 
-                                   TextColor="White"  
-                                    VerticalTextAlignment="Start"
-                                       HorizontalTextAlignment="Center"
-                                       VerticalOptions="Center"
-                                   HorizontalOptions="Center" 
-                                   FontSize="25"
-                                   FontAttributes="Bold"/>
-                        <!--</local:GradientColorStack>-->
-                    </Grid>
-                </Frame>
             </local:MainGrid>
             
         </Grid>
