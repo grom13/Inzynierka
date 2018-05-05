@@ -10,7 +10,7 @@
           HorizontalOptions="Start"
           VerticalOptions="Center">
         <Grid
-            BackgroundColor="Green" 
+            BackgroundColor="#00b20e" 
             HorizontalOptions="Fill" 
             VerticalOptions="Fill">
             <Grid.GestureRecognizers>

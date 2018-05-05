@@ -7,11 +7,31 @@
     <Grid>
         <Grid x:Name="Poziomy" RowSpacing="0" BackgroundColor="Aqua">
             <Grid.RowDefinitions>
-                <RowDefinition Height="12*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="6*"/>
                 <RowDefinition Height="84*"/>
                 <RowDefinition Height="4*"/>
             </Grid.RowDefinitions>
-            <local:MainGrid Grid.Row="1" StartColor="#e2edff" EndColor="#abbddb" BackgroundColor="White">
+            <Grid BackgroundColor="WhiteSmoke">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="5.5*"/>
+                    <ColumnDefinition Width="6*"/>
+                    <ColumnDefinition Width="85.5*"/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="1" Source="Iamges/bateria.png"/>
+                <Label Grid.Column="1" Text="100%" FontSize="17" FontAttributes="Bold" TextColor="WhiteSmoke" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                <Grid Grid.Column="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3*"/>
+                        <RowDefinition Height="93*"/>
+                        <RowDefinition Height="4*"/>
+                    </Grid.RowDefinitions>
+                    <Image Grid.Row="1" Source="Iamges/wifi.png"/>
+                </Grid>
+                
+            </Grid>
+            <local:MainGrid Grid.Row="2" StartColor="#e2edff" EndColor="#abbddb" BackgroundColor="White">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="40*"/>
                     <ColumnDefinition Width="20*"/>
