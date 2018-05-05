@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Grid xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Inzynierka.UserControls.Toolbar">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" BackgroundColor="WhiteSmoke">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="5.5*"/>
+                <ColumnDefinition Width="7*"/>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="58.5*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Column="1" Source="Iamges/bateria.png"/>
+            <Label Grid.Column="1" 
+                       Text="100%" 
+                       FontSize="17" TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+            <Grid Grid.Column="2" HorizontalOptions="End">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="93*"/>
+                    <RowDefinition Height="4*"/>
+                </Grid.RowDefinitions>
+                <Image Grid.Row="1" Source="Iamges/wifi.png"/>
+            </Grid>
+            <Label Grid.Column="3" Text="Jakaś sieć wifi" TextColor="Black" FontSize="17" VerticalOptions="Center" HorizontalOptions="Start"/>
+            <Image Grid.Column="5" Source="Images/settings.png"/>
+            <Image Grid.Column="6" Source="Images/esc.png"/>
+        </Grid>
+        <Grid Grid.Row="1" BackgroundColor="Blue">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="75*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Text=" Praca Inżynierska" FontAttributes="Bold" FontSize="26" TextColor="White" VerticalOptions="Center"/>
+            <Image Grid.Column="2" Source="Iamges/wstecz.png"/>
+        </Grid>
+    </Grid>
+</Grid>
