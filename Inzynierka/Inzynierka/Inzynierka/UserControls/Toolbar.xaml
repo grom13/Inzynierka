@@ -19,8 +19,7 @@
             </Grid.ColumnDefinitions>
             <Image Grid.Column="1" Source="Iamges/bateria.png"/>
             <Label Grid.Column="1" 
-                       Text="100%" 
-                       FontSize="17" TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                       Text="" x:Name="lblBateria" FontSize="17" TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
             <Grid Grid.Column="2" HorizontalOptions="End">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="3*"/>
@@ -31,7 +30,13 @@
             </Grid>
             <Label Grid.Column="3" Text="Jakaś sieć wifi" TextColor="Black" FontSize="17" VerticalOptions="Center" HorizontalOptions="Start"/>
             <Image Grid.Column="5" Source="Images/settings.png"/>
-            <Image Grid.Column="6" Source="Images/esc.png"/>
+            <Image Grid.Column="6" Source="Images/esc.png">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer 
+                     Tapped="btnEsc"
+                     NumberOfTapsRequired="1"  />
+                </Image.GestureRecognizers>
+            </Image>
         </Grid>
         <Grid Grid.Row="1" BackgroundColor="Blue">
             <Grid.ColumnDefinitions>

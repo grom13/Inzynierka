@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Inzynierka.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,27 @@ namespace Inzynierka.UserControls
 	{
 		public Toolbar ()
 		{
-			InitializeComponent ();
+            IBattery battery;
+            ISsid ssid;
+            InitializeComponent ();
+            ObslugaToolbaru();
 		}
-	}
+        async void ObslugaToolbaru()
+        {
+            while (true)
+            {
+              
+                lblBateria.Text = DependencyService.Get<IBattery>().RemainingChargePercent.ToString()+"%";
+                // lblWifiPoziom.Text = DependencyService.Get<ISsid>().ssidName;
+                await Task.Delay(5000);
+
+            }
+        }
+
+        private void btnEsc(object sender, EventArgs e)
+        {
+            var closer = DependencyService.Get<ICloseApplication>();
+            closer.closeApplication();
+        }
+    }
 }
