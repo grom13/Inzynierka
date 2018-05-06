@@ -12,7 +12,11 @@
                 <RowDefinition Height="4*"/>
             </Grid.RowDefinitions>
             <control:Toolbar Grid.Row="0"/>
-            <local:MainGrid Grid.Row="1" StartColor="LightBlue" EndColor="WhiteSmoke" BackgroundColor="White">
+
+
+
+
+            <local:GradientLayout Grid.Row="1" ColorsList="#dd8f68,#a9a9a9" Mode="ToBottom">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="40*"/>
                     <ColumnDefinition Width="20*"/>
@@ -20,7 +24,8 @@
                 </Grid.ColumnDefinitions>
                 <control:PrzyciskWyjscia Grid.Column="0"/>
                 <control:PrzyciskWejscia Grid.Column="2"/>
-            </local:MainGrid>
+            </local:GradientLayout>
+
             <control:Stopka Grid.Row="2"/>
         </Grid>
         

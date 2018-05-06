@@ -56,8 +56,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BatteryImplementation.cs" />
+    <Compile Include="GradientLayoutRenderer.cs" />
     <Compile Include="MainActivity.cs" />
-    <Compile Include="MainGridRenderer.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SsidImplementation.cs" />
