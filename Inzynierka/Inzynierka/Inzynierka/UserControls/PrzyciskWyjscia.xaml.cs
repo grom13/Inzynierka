@@ -16,5 +16,10 @@ namespace Inzynierka.UserControls
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void btnWyjscie(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Wyjscia());
+        }
+    }
 }

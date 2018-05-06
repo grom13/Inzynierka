@@ -10,10 +10,10 @@ using Xamarin.Forms.Xaml;
 namespace Inzynierka
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Wejscie : ContentPage
+	public partial class Wyjscia : ContentPage
 	{
-		public Wejscie ()
-		{
+		public Wyjscia ()
+        {
             NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent ();
 		}

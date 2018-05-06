@@ -26,7 +26,7 @@ namespace Inzynierka.UserControls
             {
               
                 lblBateria.Text = DependencyService.Get<IBattery>().RemainingChargePercent.ToString()+"%";
-                // lblWifiPoziom.Text = DependencyService.Get<ISsid>().ssidName;
+                lblWifi.Text = DependencyService.Get<ISsid>().ssidName;
                 await Task.Delay(5000);
 
             }
@@ -36,6 +36,10 @@ namespace Inzynierka.UserControls
         {
             var closer = DependencyService.Get<ICloseApplication>();
             closer.closeApplication();
+        }
+        private void btnWstecz(object sender, EventArgs e)
+        {
+            Navigation.PopAsync();
         }
     }
 }
