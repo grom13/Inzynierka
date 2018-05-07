@@ -17,7 +17,7 @@
                 <ColumnDefinition Width="5*"/>
                 <ColumnDefinition Width="5*"/>
             </Grid.ColumnDefinitions>
-            <Image Grid.Column="1" Source="Iamges/bateria.png"/>
+            <Image Grid.Column="1" Source="Images/bateria.png"/>
             <Label Grid.Column="1" 
                        Text="" x:Name="lblBateria" FontSize="17" TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
             <Grid Grid.Column="2" HorizontalOptions="End">
@@ -26,7 +26,7 @@
                     <RowDefinition Height="93*"/>
                     <RowDefinition Height="4*"/>
                 </Grid.RowDefinitions>
-                <Image Grid.Row="1" Source="Iamges/wifi.png"/>
+                <Image Grid.Row="1" Source="Images/wifi.png"/>
             </Grid>
             <Label Grid.Column="3" Text="" x:Name="lblWifi" TextColor="Black" FontSize="17" VerticalOptions="Center" HorizontalOptions="Start"/>
             <Image Grid.Column="5" Source="Images/settings.png"/>
@@ -45,7 +45,7 @@
                 <ColumnDefinition Width="5*"/>
             </Grid.ColumnDefinitions>
             <Label Grid.Column="0" Text=" Praca Inżynierska" FontAttributes="Bold" FontSize="26" TextColor="White" VerticalOptions="Center"/>
-            <Image Grid.Column="2" Source="Iamges/wstecz.png">
+            <Image Grid.Column="2" Source="Images/wstecz.png">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer 
                      Tapped="btnWstecz"

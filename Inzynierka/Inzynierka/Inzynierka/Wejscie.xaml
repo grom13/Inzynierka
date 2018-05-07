@@ -12,6 +12,30 @@
                 <RowDefinition Height="4*"/>
             </Grid.RowDefinitions>
             <control:Toolbar Grid.Row="0"/>
+            <local:GradientLayout Grid.Row="1" ColorsList="#ffffff,#a9a9a9" Mode="ToBottom">
+                <!--<Grid x:Name="Start">
+                    <Label Text="Przyłóż kartę do czytnika" FontAttributes="Bold" FontSize="70" VerticalOptions="Center" HorizontalOptions="Center"/>
+                </Grid>-->
+                <Grid x:Name="Odbicie">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20*"/>
+                        <RowDefinition Height="10*"/>
+                        <RowDefinition Height="40*"/>
+                        <RowDefinition Height="10*"/>
+                        <RowDefinition Height="20*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="15*"/>
+                        <ColumnDefinition Width="30*"/>
+                        <ColumnDefinition Width="5*"/>
+                        <ColumnDefinition Width="40*"/>
+                        <ColumnDefinition Width="10*"/>
+                    </Grid.ColumnDefinitions>
+                    <Frame Padding="0" CornerRadius="15" Grid.Row="1" Grid.RowSpan="3" Grid.Column="1" BackgroundColor="Black"/>
+                    <Frame Padding="0" CornerRadius="15" Grid.Row="2"  Grid.Column="3" BackgroundColor="Blue"/>
+                    <!--PIERDULNĄĆ TO W JAKIŚ TAKI ALA BLANKIET (OBUDOWAĆ FREJMEM)-->
+                </Grid>
+            </local:GradientLayout>
             <control:Stopka Grid.Row="2"/>
         </Grid>
 
