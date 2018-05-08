@@ -18,8 +18,21 @@
                     <ColumnDefinition Width="20*"/>
                     <ColumnDefinition Width="40*"/>
                 </Grid.ColumnDefinitions>
-                <control:PrzyciskWyjscia Grid.Column="0"/>
-                <control:PrzyciskWejscia Grid.Column="2"/>
+                <control:Przycisk Grid.Column="0" HorizontalOptions="End" VerticalOptions="Center" 
+                                  Ikona="Images/exit.png" Tytul="REJESTRACJA WYJŚĆ" Tlo="Red">
+                    <control:Przycisk.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="btnWyjscia"
+                                              NumberOfTapsRequired="1"/>
+                    </control:Przycisk.GestureRecognizers>
+                </control:Przycisk>
+
+                <control:Przycisk Grid.Column="2" HorizontalOptions="Start" VerticalOptions="Center"
+                                  Ikona="Images/enter.png" Tytul="REJESTRACJA WEJŚĆ" Tlo="Green">
+                    <control:Przycisk.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="btnWejscia"
+                                              NumberOfTapsRequired="1"/>
+                    </control:Przycisk.GestureRecognizers>
+                </control:Przycisk>
             </local:GradientLayout>
 
             <control:Stopka Grid.Row="2"/>

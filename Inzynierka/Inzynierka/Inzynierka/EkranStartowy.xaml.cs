@@ -17,8 +17,15 @@ namespace Inzynierka
             NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent ();
 		}
-      
 
+        private void btnWejscia(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Wejscie());
+        }
+        private void btnWyjscia(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Wyjscia());
+        }
         protected override void OnSizeAllocated(double width, double height)
         {
             base.OnSizeAllocated(width, height);

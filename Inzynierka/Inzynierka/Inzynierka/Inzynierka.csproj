@@ -13,8 +13,8 @@
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="App.xaml.cs">
       <DependentUpon>*.xaml</DependentUpon>
     </Compile>
-    <Compile Update="UserControls\PrzyciskWejscia.xaml.cs">
-      <DependentUpon>PrzyciskWejscia.xaml</DependentUpon>
+    <Compile Update="UserControls\Przycisk.xaml.cs">
+      <DependentUpon>Przycisk.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
@@ -22,10 +22,7 @@
     <EmbeddedResource Update="EkranStartowy.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="UserControls\PrzyciskWejscia.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="UserControls\PrzyciskWyjscia.xaml">
+    <EmbeddedResource Update="UserControls\Przycisk.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="UserControls\Stopka.xaml">

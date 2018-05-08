@@ -31,8 +31,18 @@
                         <ColumnDefinition Width="40*"/>
                         <ColumnDefinition Width="10*"/>
                     </Grid.ColumnDefinitions>
-                    <Frame Padding="0" CornerRadius="15" Grid.Row="1" Grid.RowSpan="3" Grid.Column="1" BackgroundColor="Black"/>
-                    <Frame Padding="0" CornerRadius="15" Grid.Row="2"  Grid.Column="3" BackgroundColor="Blue"/>
+                    <Frame Padding="0" CornerRadius="15" Grid.Row="1" Grid.RowSpan="3" Grid.Column="1">
+                        <Grid
+                             BackgroundColor="Black" 
+                             HorizontalOptions="Fill" 
+                             VerticalOptions="Fill" />
+                    </Frame>
+                    <Frame Padding="0" CornerRadius="15" Grid.Row="2" Grid.Column="3" >
+                        <Grid
+                             BackgroundColor="Blue" 
+                             HorizontalOptions="Fill" 
+                             VerticalOptions="Fill" />
+                    </Frame>
                     <!--PIERDULNĄĆ TO W JAKIŚ TAKI ALA BLANKIET (OBUDOWAĆ FREJMEM)-->
                 </Grid>
             </local:GradientLayout>
