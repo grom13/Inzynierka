@@ -111,6 +111,7 @@
     <Content Include="Images\enter.png" />
     <Content Include="Images\esc.png" />
     <Content Include="Images\exit.png" />
+    <Content Include="Images\fb.jpg" />
     <Content Include="Images\icon.png" />
     <Content Include="Images\settings.png" />
     <Content Include="Images\wifi.png" />

@@ -27,11 +27,11 @@
                         <ColumnDefinition Width="70*"/>
                         <ColumnDefinition Width="15*"/>
                     </Grid.ColumnDefinitions>
-                    <Frame Padding="0" CornerRadius="10" OutlineColor="Aquamarine" Grid.Row="1" Grid.Column="1" >
+                    <Frame Padding="0" CornerRadius="20" OutlineColor="Aquamarine" Grid.Row="1" Grid.Column="1" >
                         <Grid BackgroundColor="Blue" HorizontalOptions="Fill" VerticalOptions="Fill">
                             <Grid.RowDefinitions>
-                                <RowDefinition Height="10*"/>
-                                <RowDefinition Height="10*"/>
+                                <RowDefinition Height="15*"/>
+                                <RowDefinition Height="5*"/>
                                 <RowDefinition Height="60*"/>
                                 <RowDefinition Height="10*"/>
                                 <RowDefinition Height="10*"/>
@@ -43,18 +43,30 @@
                                 <ColumnDefinition Width="45*"/>
                                 <ColumnDefinition Width="10*"/>
                             </Grid.ColumnDefinitions>
-                    <Frame Padding="0" CornerRadius="15" Grid.Row="1" Grid.RowSpan="3" Grid.Column="1">
-                        <Grid
-                             BackgroundColor="Black" 
-                             HorizontalOptions="Fill" 
-                             VerticalOptions="Fill" />
+                            <Label Grid.Row="0" Grid.ColumnSpan="5" TextColor="White" FontSize="25" VerticalOptions="Start" HorizontalOptions="Center" Text="DZIEŃ DOBRY"/>
+                            <Label Grid.Row="0" Grid.ColumnSpan="5" TextColor="White" FontSize="25" VerticalOptions="End" HorizontalOptions="Center" Text="ZANOTOWANO WEJŚCIE"/>
+                            <Frame Padding="0" CornerRadius="15" Grid.Row="1" Grid.RowSpan="3" Grid.Column="1" HorizontalOptions="Center" 
+                             VerticalOptions="Center" WidthRequest="250" HeightRequest="250">
+                               
+                                    <Image VerticalOptions="Fill" HorizontalOptions="Fill" Source="Images/fb.jpg"/>
+                              
                     </Frame>
                     <Frame Padding="0" CornerRadius="15" Grid.Row="2" Grid.Column="3" >
-                        <Grid
-                             BackgroundColor="CornflowerBlue" 
+                                <Grid
+                             BackgroundColor="DarkBlue" 
                              HorizontalOptions="Fill" 
-                             VerticalOptions="Fill" />
+                             VerticalOptions="Fill" >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Label Grid.Row="0" Text="Imię: Damian" TextColor="White" FontSize="28" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="End"/>
+                                    <Label Grid.Row="1" Text="Nazwisko: Sielski" TextColor="White" FontSize="28" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                    <Label Grid.Row="2" Text="Nr pracownika: 1111" TextColor="White" FontSize="28" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Start"/>
+                                </Grid>
                     </Frame>
+                            <Label Grid.Row="4" Grid.ColumnSpan="5" TextColor="White" FontSize="30" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center" Text="10.05.2018 6:00"/>
                         </Grid>
                     </Frame>
                     <!--PIERDULNĄĆ TO W JAKIŚ TAKI ALA BLANKIET (OBUDOWAĆ FREJMEM)-->

@@ -12,7 +12,7 @@
                 <RowDefinition Height="4*"/>
             </Grid.RowDefinitions>
             <control:Toolbar Grid.Row="0"/>
-            <local:GradientLayout Grid.Row="1" ColorsList="#dd8f68,#a9a9a9" Mode="ToBottom">
+            <local:GradientLayout Grid.Row="1" ColorsList="#ffffff,#a9a9a9" Mode="ToBottom">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="40*"/>
                     <ColumnDefinition Width="20*"/>
